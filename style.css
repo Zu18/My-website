@@ -3,7 +3,6 @@
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
     color: #565555;
     line-height: 1.8;
     font-family: "Lato", sans-serif;
@@ -23,6 +22,15 @@ h1 {
 
 .bi-1 {
     background-image: url('images/back-ground-image-grayscale.jpg');
+}
+
+.bi-2 {
+    background-position: left center;
+    background-image: url('images/background-image-2.jpg');
+}
+
+.bi-3 {
+    background-image: url('images/background-image-grayscale-3.jpg');
 }
 
 .headline {
@@ -65,4 +73,24 @@ h1 {
     object-fit: cover;
     border-radius: 10px;
     opacity: 0.9;
+}
+
+.img-contact {
+    width: 300px;
+    height: 160px;
+    border-radius: 10px;
+    float: right;
+    opacity: 0.7;
+}
+.fa-wm {
+    width: 25px;
+    text-align: center;
+    margin-right: 16px !important;
+    line-height: 2;
+    color: #777;
+}
+
+a {
+    color: #565555
+    /* Set the desired initial color */
 }
