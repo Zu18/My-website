@@ -132,3 +132,25 @@ a {
     /* Set the desired initial color */
 }
 
+footer {
+    background-color: #777;
+    text-align: center;
+    color: #fff;
+}
+
+.padding-large {
+    padding: 30px 10px 50px 10px !important;
+}
+
+.button-1 {
+    border: none;
+    border-radius: 5px;
+    background-color: #ddd;
+    color: #555;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 30px 2px 4px 2px;
+}
