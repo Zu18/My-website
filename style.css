@@ -43,6 +43,15 @@ body {
     color: black;
 }
 
+/* Hide the link that should open and close the topnav on small screens */
+.topNavbar .icon {
+    display: none;
+}
+
+.topNavbar .close-menu {
+    display: none;
+}
+
 h1 {
     text-align: center !important;
     margin-bottom: 30px;
@@ -258,9 +267,32 @@ footer {
     }
 }
 
-@media only screen and (max-width: 428px) {
-    .topNavbar a {
-        padding: 14px 8px 14px 4px;
-        font-size: 15px;
+/* Responsive navbar */
+@media only screen and (max-width: 600px) {
+    .topNavbar a:not(:first-child) {
+        display: none;
+    }
+
+    .topNavbar a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topNavbar .responsive {
+        position: relative;
+    }
+
+    .topNavbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topNavbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        color: #000 !important;
+        background-color: #fff !important;
     }
 }
