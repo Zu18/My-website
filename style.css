@@ -43,12 +43,8 @@ body {
     color: black;
 }
 
-/* Hide the link that should open and close the topnav on small screens */
+/* Hide the link that should open and close the topNavbar on small screens */
 .topNavbar .icon {
-    display: none;
-}
-
-.topNavbar .close-menu {
     display: none;
 }
 
@@ -112,6 +108,15 @@ h1 {
     width: 47%;
 }
 
+.column-30 {
+    width: calc(30% - 20px);
+    background-color: orange;
+}
+
+.column-70 {
+    width: 70%;
+    background-color: chartreuse;
+}
 
 .column-ed {
     /* Add shadows to create the "3d" effect */
@@ -157,6 +162,19 @@ h1 {
 .img-emblems {
     width: 70px;
     height: 70px;
+}
+
+.img-container {
+    height: 600px; /* Set the desired height for the container */
+    max-width: 900px;
+}
+
+.img-portfolio-full {
+    width: calc(100% - 40px); /* Account for 10px border on both sides */
+    height: calc(100% - 40px); /* Account for 10px border on both top and bottom */
+    object-position: center center;
+    border: 20px solid; /* Solid border with 10px width */
+    border-color: #f7f7f7; /* Border color */
 }
 
 .fa-wm {
@@ -295,4 +313,30 @@ footer {
         color: #000 !important;
         background-color: #fff !important;
     }
+}
+
+@media only screen and (max-width: 950px) {
+    .column-30 {
+        width: calc(48% - 20px);
+        background-color: red;
+    }
+
+    .column-70 {
+        width: 48%;
+        background-color: blue;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .column-30 {
+        width: 100%;
+        background-color: aqua;
+        margin: 15px;
+    }
+
+    .column-70 {
+        width: 100%;
+        background-color: blueviolet;
+    }
+
 }
