@@ -88,6 +88,16 @@ h1 {
     font-weight: bold;
     padding: 30px;
 }
+.headline-container {
+    height: 250px;
+    background-color: #dddddd;
+    position: relative;
+    margin-top: 20px;
+}
+
+.headline-container:hover .headline {
+    font-size: 30px; /* Increase font size on hover */
+}
 
 .row {
     display: flex;
@@ -108,13 +118,13 @@ h1 {
     width: 47%;
 }
 
-.column-30 {
-    width: calc(30% - 20px);
+.column-1 {
+    width: calc(33% - 20px);
     background-color: orange;
 }
 
-.column-70 {
-    width: 70%;
+.column-2 {
+    width: calc(65% - 20px);
     background-color: chartreuse;
 }
 
@@ -165,16 +175,18 @@ h1 {
 }
 
 .img-container {
-    height: 600px; /* Set the desired height for the container */
+    max-height: 600px; /* Set the desired height for the container */
     max-width: 900px;
 }
 
 .img-portfolio-full {
     width: calc(100% - 40px); /* Account for 10px border on both sides */
     height: calc(100% - 40px); /* Account for 10px border on both top and bottom */
-    object-position: center center;
-    border: 20px solid; /* Solid border with 10px width */
-    border-color: #f7f7f7; /* Border color */
+    *object-position: center center;
+    /* Solid border with 10px width */
+    /* Border color */
+    padding: 20px;
+   /* border: 20px solid #f7f7f7;*/
 }
 
 .fa-wm {
@@ -316,27 +328,31 @@ footer {
 }
 
 @media only screen and (max-width: 950px) {
-    .column-30 {
-        width: calc(48% - 20px);
+    .column-1 {
+        width: calc(56% - 20px);
         background-color: red;
     }
 
-    .column-70 {
-        width: 48%;
+    .column-2 {
+        width: 40%;
         background-color: blue;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .column-30 {
+    .column-1 {
         width: 100%;
         background-color: aqua;
         margin: 15px;
     }
 
-    .column-70 {
+    .column-2 {
         width: 100%;
+        margin: 15px;
         background-color: blueviolet;
+    }
+    .img-portfolio-full{
+        object-fit: scale-down;
     }
 
 }
