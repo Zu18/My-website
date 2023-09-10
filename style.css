@@ -90,7 +90,7 @@ h1 {
 }
 .headline-container {
     height: 250px;
-    background-color: #dddddd;
+    background-color: #d7d7d7;
     position: relative;
     margin-top: 20px;
 }
@@ -125,7 +125,7 @@ h1 {
 
 .column-2 {
     width: calc(65% - 20px);
-    background-color: chartreuse;
+    background-color: #f7f7f7;
 }
 
 .column-ed {
